@@ -30,7 +30,7 @@ $(NAME): $(OBJ)
 
 clean:
 	make clean -C libft
-	rm -f *.o
+	rm -f $(OBJ)
 	rm -f srcs/ft_conversions.o
 
 fclean: clean
