@@ -28,6 +28,11 @@ int	ft_puthex(int nb, char id)
 	int				i;
 	unsigned int	uns_nb;
 
+	if (nb == 0)
+	{
+		ft_putchar('0');
+		return (1);
+	}
 	uns_nb = negative_nb(nb);
 	i = 0;
 	while (uns_nb > 0)
